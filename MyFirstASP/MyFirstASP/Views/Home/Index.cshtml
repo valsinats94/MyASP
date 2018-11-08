@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Submit Form";
+
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="~Content/SubmitFormStyle.css">
+    <title>Submit Form</title>
+</head>
+    <body>
+        <h1>Submit Form</h1>
+
+        <table class="submitForm">
+            <tr>
+                <td class="submitFormData">First Name</td>
+                <td class="submitFormData"><input type="text" name="FirstName" /></td>
+            </tr>
+            <tr>
+                <td class="submitFormData">Second Name</td>
+                <td class="submitFormData"><input type="text" name="SecondName" /></td>
+            </tr>
+            <tr>
+                <td class="submitFormData">Email</td>
+                <td class="submitFormData"><input type="text" name="Email" /></td>
+            </tr>
+            <tr>
+                <td class="submitFormData">Password</td>
+                <td class="submitFormData"><input type="password" name="Password" /></td>
+            </tr>
+            <tr>
+                <td class="submitFormData">Confirm Password</td>
+                <td class="submitFormData"><input type="password" name="ConfirmPassword" /></td>
+            </tr>
+        </table>
+
+        <input type="submit" name="SubmitForm" />
+    </body>
+</html>
