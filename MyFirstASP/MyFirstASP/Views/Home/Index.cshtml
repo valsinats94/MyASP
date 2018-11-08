@@ -14,29 +14,32 @@
     <body>
         <h1>Submit Form</h1>
 
-        <table class="submitForm">
-            <tr>
-                <td class="submitFormData">First Name</td>
-                <td class="submitFormData"><input type="text" name="FirstName" /></td>
-            </tr>
-            <tr>
-                <td class="submitFormData">Second Name</td>
-                <td class="submitFormData"><input type="text" name="SecondName" /></td>
-            </tr>
-            <tr>
-                <td class="submitFormData">Email</td>
-                <td class="submitFormData"><input type="text" name="Email" /></td>
-            </tr>
-            <tr>
-                <td class="submitFormData">Password</td>
-                <td class="submitFormData"><input type="password" name="Password" /></td>
-            </tr>
-            <tr>
-                <td class="submitFormData">Confirm Password</td>
-                <td class="submitFormData"><input type="password" name="ConfirmPassword" /></td>
-            </tr>
-        </table>
+        <form method="post">
+            <table class="submitForm">
+                <tr>
+                    <td class="submitFormData">First Name</td>
+                    <td class="submitFormData"><input type="text" name="FirstName" /></td>
+                </tr>
+                <tr>
+                    <td class="submitFormData">Second Name</td>
+                    <td class="submitFormData"><input type="text" name="SecondName" /></td>
+                </tr>
+                <tr>
+                    <td class="submitFormData">Email</td>
+                    <td class="submitFormData"><input type="text" name="Email" /></td>
+                </tr>
+                <tr>
+                    <td class="submitFormData">Password</td>
+                    <td class="submitFormData"><input type="password" name="Password" /></td>
+                </tr>
+                <tr>
+                    <td class="submitFormData">Confirm Password</td>
+                    <td class="submitFormData"><input type="password" name="ConfirmPassword" /></td>
+                </tr>
+            </table>
 
-        <input type="submit" name="SubmitForm" />
+            <label>&nbsp;</label>
+            <input type="submit" name="SubmitForm" formaction="/Submit/Create" formmethod="post" />
+        </form>
     </body>
 </html>
