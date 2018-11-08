@@ -7,14 +7,17 @@ namespace UsersAsp.Database.Models
 {
     internal class FirstAspDataContext : DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
+        DbSet<User> Users { get; set; }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder builder)
+        {
+            builder.UseSqlServer("Server=.;Database=MyFirstAspProject;Integrated Security=True");
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder builder)
         {
-
+            builder.Entity<User>()
+                .HasKey(u => u.Id);
         }
     }
 }
