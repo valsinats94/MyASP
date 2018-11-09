@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MyFirstAsp.Core.Interfaces.Services;
+using MyFirstASP.ShellServices;
+using SimpleInjector;
 
 namespace MyFirstASP
 {
@@ -14,6 +17,9 @@ namespace MyFirstASP
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+
+            IShellService shellService = new ShellService();
+            shellService.ConfigureDependancyInjection();
         }
 
         public IConfiguration Configuration { get; }

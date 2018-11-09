@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsersAsp.Database", "UsersA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstAsp.Core", "MyFirstAsp.Core\MyFirstAsp.Core.csproj", "{623CAA73-7296-45C0-A04A-83C3BF2F9D11}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstASP.Tests", "MyFirstASP.Tests\MyFirstASP.Tests.csproj", "{092E8017-2E8A-4559-8DB0-523DE1825AF0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{623CAA73-7296-45C0-A04A-83C3BF2F9D11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{623CAA73-7296-45C0-A04A-83C3BF2F9D11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{623CAA73-7296-45C0-A04A-83C3BF2F9D11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092E8017-2E8A-4559-8DB0-523DE1825AF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092E8017-2E8A-4559-8DB0-523DE1825AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092E8017-2E8A-4559-8DB0-523DE1825AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092E8017-2E8A-4559-8DB0-523DE1825AF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
